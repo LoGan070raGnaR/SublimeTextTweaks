@@ -1,0 +1,8 @@
+{
+    "target": "terminus_open",
+    "cmd": ["bash", "-c", "nasm -f elf64 \"$file\" && ld -o \"${file_path}/${file_base_name}\" \"$file_path/${file_base_name}.o\" && \"./${file_base_name}\" && read -n 1 -s -r"],
+    "working_dir": "${file_path}",
+    "auto_close": false,
+    "selector": "source.asm"
+}
+

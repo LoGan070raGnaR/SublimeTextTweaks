@@ -1,0 +1,8 @@
+{
+    "target": "terminus_open",
+    "cmd": ["bash", "-c", "python3 \"$file\" && read -n 1 -s -r"],
+    "working_dir": "${file_path}",
+    "auto_close": false,
+    "selector": "source.python"
+}
+
